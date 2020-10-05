@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007516542435",
+    "firebase_url": "https://notifications-fluxo-boiler.firebaseio.com",
+    "project_id": "notifications-fluxo-boiler",
+    "storage_bucket": "notifications-fluxo-boiler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007516542435:android:fffcf360a2afb77b272cd6",
+        "android_client_info": {
+          "package_name": "com.fluxo.notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007516542435-tpa86btkj7kgr1sanlfffnkal9blp7q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5cLrsRofn8aE0JLt2uDAvhDE00DfDjsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007516542435-tpa86btkj7kgr1sanlfffnkal9blp7q8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

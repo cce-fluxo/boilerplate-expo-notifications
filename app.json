@@ -13,11 +13,21 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "useNextNotificationsApi": true,
+      "package": "com.fluxo.notifications",
+      "googleServicesFile": "./google-services.json"
+    },
+    "notification": {
+      "color": "#FFA500",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "Ola",
+      "iosDisplayInForeground": true,
+      "icon": "./assets/icon.png"
     },
     "web": {
       "favicon": "./assets/favicon.png"
