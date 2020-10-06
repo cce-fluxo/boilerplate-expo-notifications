@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   Button,
+  TouchableWithoutFeedback,
   StyleSheet,
 } from "react-native";
 
@@ -14,7 +15,7 @@ import {
   getExpoPushNotificationsToken,
 } from "../../services/notifications";
 
-const PushNotificationsScreen = () => {
+const PushNotificationsScreen = ({ navigation }) => {
   useReceivedNotification({
     handleBackgroundNotification: (notification) => console.log(notification),
     handleForegroundNotification: (notification) => console.log(notification),
@@ -108,6 +109,15 @@ const PushNotificationsScreen = () => {
         />
       )}
 
+      <View style={styles.spacer} />
+      <TouchableWithoutFeedback
+        onPress={() => navigation.navigate("PushNotificationsCategoriesScreen")}
+      >
+        <Text style={styles.link}>
+          Navegar para tela de Push Notifications Interativas -{">"}
+        </Text>
+      </TouchableWithoutFeedback>
+
       <Text style={styles.error}>{sendPushNotificationError}</Text>
 
       <Text style={styles.identifierTitle}>Seu Expo Push Token</Text>
@@ -156,6 +166,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 10,
     fontWeight: "bold",
+  },
+  link: {
+    fontSize: 12,
+    textDecorationLine: "underline",
+    color: "black",
+    fontWeight: "bold",
+    height: 30,
+    marginVertical: 20,
   },
   identifierTitle: {
     position: "absolute",

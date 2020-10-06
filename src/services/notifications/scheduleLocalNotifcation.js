@@ -6,6 +6,7 @@ export const scheduleLocalNotification = async ({
   body,
   color,
   data,
+  categoryIdentifier,
   seconds,
   repeats,
 }) => {
@@ -17,6 +18,7 @@ export const scheduleLocalNotification = async ({
         body: body || "Exemplo de Mensagem",
         color: color || "#FFA500",
         data: data || { dados: "Exemplo de dados" },
+        categoryIdentifier: categoryIdentifier || null,
       },
       trigger: seconds
         ? {

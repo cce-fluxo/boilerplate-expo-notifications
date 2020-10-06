@@ -13,3 +13,5 @@ Notifications.setNotificationHandler({
 export * from "./getExpoPushToken";
 export * from "./useReceivedNotification";
 export * from "./scheduleLocalNotifcation";
+export * from "./createTextInputNotificationCategory";
+export * from "./dismissNotification";

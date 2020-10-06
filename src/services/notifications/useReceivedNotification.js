@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import * as Notifications from "expo-notifications";
 
-/* This hook enables that when a notification is triggered on the user's device,
- either when the user is using the app (foreground) or in another app (background),
-the functions handleForegroundNotification and handleBackgroundNotification are
-called with some data of the notification as the parameter */
+/* 
+Este hook permite que quando uma notificação é acionada no dispositivo do usuário,
+se o usuário está usando o aplicativo (foreground) ou em outro aplicativo (background),
+as funções handleForegroundNotification e handleBackgroundNotification são
+chamadas com dados da notificação como parâmetro */
 
 export const useReceivedNotification = ({
   handleForegroundNotification,
