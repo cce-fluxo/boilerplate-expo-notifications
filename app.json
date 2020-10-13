@@ -1,26 +1,35 @@
 {
   "expo": {
-    "name": "notifications",
+    "name": "Fluxo Notifications Template",
+    "description": "Expo style boilerplate to deal with local and push notifications with expo",
     "slug": "notifications",
-    "version": "1.0.0",
     "orientation": "portrait",
+    "privacy": "public",
+    "scheme": "fluxo",
+    "primaryColor": "#FFA500",
+    "githubUrl": "https://github.com/leonardolombardi07/boilerplate-expo-notifications",
+    "version": "UNVERSIONED",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFA500"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
+    "platforms": ["android", "ios"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.fluxoconsultoria.ufrj",
+      "buildNumber": "1.0.0",
+      "supportsTablet": false
     },
     "android": {
       "useNextNotificationsApi": true,
       "package": "com.fluxo.notifications",
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1
     },
     "notification": {
       "color": "#FFA500",
@@ -29,8 +38,8 @@
       "iosDisplayInForeground": true,
       "icon": "./assets/icon.png"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "androidStatusBar": {
+      "backgroundColor": "#FFA500"
     }
   }
 }
