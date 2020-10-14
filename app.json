@@ -34,9 +34,9 @@
     "notification": {
       "color": "#FFA500",
       "androidMode": "collapse",
-      "androidCollapsedTitle": "Ola",
+      "androidCollapsedTitle": "Notificações",
       "iosDisplayInForeground": true,
-      "icon": "./assets/icon.png"
+      "icon": "./assets/pushNotificationsIcon.png"
     },
     "androidStatusBar": {
       "backgroundColor": "#FFA500"
